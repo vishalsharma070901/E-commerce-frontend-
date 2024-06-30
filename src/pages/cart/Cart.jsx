@@ -15,21 +15,13 @@ const CartPage = () => {
 
 
   // Initialize quantities when cart updates
-  useEffect(() => {
-    const initialQuantities = JSON.parse(localStorage.getItem("quantities")) || {};
-    cart.forEach((product) => {
-      if (!initialQuantities[product._id]) {
-        initialQuantities[product._id] = 1; // Default quantity is 1 for each product
-      }
-    });
-    setQuantities(initialQuantities);
-  }, [cart]);
+
 
   // Calculate total amount whenever cart or quantities change
   useEffect(() => {
     totalAmount();
-    localStorage.setItem("quantities", JSON.stringify(quantities));
-  }, [cart, quantities]);
+ 
+  }, [cart]);
 
   // Function to calculate total amount
   const totalAmount = () => {

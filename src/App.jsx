@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Homepage from './pages/homepage/Homepage';
 import Nopage from './pages/nopage/Nopage';
@@ -20,11 +20,18 @@ import CategoryPage from './pages/category/CategoryPage';
 import myContext from './context/myContext'; 
 
 const App = () => {
+ const[ loading, SetLoading]= useState()
 
+  useEffect(()=>{
+   SetLoading(false)
+  })
 
 
   return (
-    <MyState>
+    <>
+    {loading ? ( <div className="flex justify-center items-center h-screen">
+          <PulseLoader color="#d81b60" />
+        </div>):  <MyState>
       <Router>
         <ScrollTop />
         <Routes>
@@ -48,7 +55,9 @@ const App = () => {
         </Routes>
         <Toaster />
       </Router>
-    </MyState>
+    </MyState>}
+  
+    </>
   );
 };
 

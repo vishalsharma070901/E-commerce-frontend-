@@ -59,7 +59,7 @@ const AddProductPage = () => {
         // console.log(data)
         setLoading(true);
         try {
-            const response = await fetch("http://localhost:8000/api/admin/create-product", {
+            const response = await fetch("https://e-commerce-backend-814s.onrender.com/api/admin/create-product", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

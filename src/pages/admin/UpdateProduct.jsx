@@ -61,7 +61,7 @@ const UpdateProduct = () => {
         // console.log(data)
         setLoading(true);
         try {
-            const response = await fetch("http://localhost:8000/api/admin/updateproduct/"+ id , {
+            const response = await fetch("https://e-commerce-backend-814s.onrender.com/api/admin/updateproduct/"+ id , {
                 method: "PUT",
                 headers: {
                     "Content-Type": "application/json",
@@ -94,7 +94,7 @@ const UpdateProduct = () => {
     const getProduct=async()=>{
         try {
            
-            const response = await fetch("http://localhost:8000/api/admin/product/"+ id,{
+            const response = await fetch("https://e-commerce-backend-814s.onrender.com/api/admin/product/"+ id,{
 
                 method: "GET",
                 headers:{

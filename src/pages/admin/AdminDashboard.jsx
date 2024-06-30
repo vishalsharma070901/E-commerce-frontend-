@@ -23,7 +23,7 @@ const AdminDashboard = () => {
 
     const getproducts = async () => {
         try {
-            const response = await fetch("http://localhost:8000/api/admin/products", {
+            const response = await fetch("https://e-commerce-backend-814s.onrender.com/api/admin/products", {
                 method: "GET",
                 headers:{
                     Authorization: `Bearer ${token}`
@@ -38,7 +38,7 @@ const AdminDashboard = () => {
 
     const getUsers = async () => {
         try {
-            const response = await fetch("http://localhost:8000/api/admin/users", {
+            const response = await fetch("https://e-commerce-backend-814s.onrender.com/api/admin/users", {
                 method: "GET",
                 headers:{
                     Authorization: `Bearer ${token}`
@@ -55,7 +55,7 @@ const AdminDashboard = () => {
 
     const getAllOrders= async ()=>{
         try {
-            const response = await fetch("http://localhost:8000/api/order/get-all-orders", {
+            const response = await fetch("https://e-commerce-backend-814s.onrender.com/api/order/get-all-orders", {
                 method: "GET",
                 // headers:{
                 //     Authorization: `Bearer ${token}`

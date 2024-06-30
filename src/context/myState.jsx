@@ -45,7 +45,7 @@ function MyState({ children }) {
     const UserAuthentication = async () => {
         try {
             setLoading(true);
-            const response = await fetch("http://localhost:8000/api/auth/user", {
+            const response = await fetch("https://e-commerce-backend-814s.onrender.com/api/auth/user", {
                 method: "GET",
                 headers: {
                     Authorization: `Bearer ${token}`,
