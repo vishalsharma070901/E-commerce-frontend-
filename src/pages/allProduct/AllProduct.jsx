@@ -20,6 +20,7 @@ const AllProduct = () => {
       const response = await fetch(
         "https://e-commerce-backend-814s.onrender.com/api/product/get-products",
         {
+          mode:"no-cors",
           method: "GET",
         }
       );

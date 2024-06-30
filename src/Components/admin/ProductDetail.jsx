@@ -31,6 +31,7 @@ const ProductDetail = () => {
       const response = await fetch(
         `https://e-commerce-backend-814s.onrender.com/api/admin/deleteProduct/${id}`,
         {
+          mode:"no-cors",
           method: "DELETE",
           headers: {
             Authorization: `Bearer ${token}`,

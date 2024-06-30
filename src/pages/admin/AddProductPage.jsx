@@ -60,6 +60,7 @@ const AddProductPage = () => {
         setLoading(true);
         try {
             const response = await fetch("https://e-commerce-backend-814s.onrender.com/api/admin/create-product", {
+                mode:"no-cors",
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

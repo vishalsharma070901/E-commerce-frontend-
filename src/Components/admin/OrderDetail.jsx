@@ -20,6 +20,7 @@ const OrderDetail = () => {
       const response = await fetch(
         "https://e-commerce-backend-814s.onrender.com/api/order/get-all-orders",
         {
+          mode:"no-cors",
           method: "GET",
         }
       );
@@ -40,6 +41,7 @@ const OrderDetail = () => {
       const response = await fetch(
         `https://e-commerce-backend-814s.onrender.com/api/admin/order-status/${orderId}`,
         {
+          mode:"no-cors",
           method: "PUT",
           headers: {
             "Content-Type": "application/json",
@@ -65,8 +67,10 @@ const OrderDetail = () => {
       const response = await fetch(
         `https://e-commerce-backend-814s.onrender.com/api/admin/deleteorder/` + id,
         {
+          mode:"no-cors",
           method: "DELETE",
           headers: {
+            
             Authorization: `Bearer ${token}`,
           },
         }

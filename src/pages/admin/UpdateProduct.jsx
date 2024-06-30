@@ -95,7 +95,7 @@ const UpdateProduct = () => {
         try {
            
             const response = await fetch("https://e-commerce-backend-814s.onrender.com/api/admin/product/"+ id,{
-
+                mode:"no-cors",
                 method: "GET",
                 headers:{
                     Authorization: `Bearer ${token}`

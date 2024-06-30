@@ -33,6 +33,7 @@ const Signup = () => {
     setLoading(true);
     try {
       const response = await fetch(`https://e-commerce-backend-814s.onrender.com/api/auth/register`, {
+        mode:"no-cors",
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -40,6 +40,7 @@ const BuyNowModal = () => {
 
     try {
       const res = await fetch(`https://e-commerce-backend-814s.onrender.com/api/payment/order`, {
+        mode:"no-cors",
         method: "POST",
         headers: {
           "content-type": "application/json",
