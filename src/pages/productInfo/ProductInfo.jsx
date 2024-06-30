@@ -23,7 +23,7 @@ const ProductInfo = () => {
     // console.log("called ");
     try {
       const response = await fetch(
-        "http://localhost:8000/api/product/get-product/" + id
+        "https://e-commerce-backend-814s.onrender.com/api/product/get-product/" + id
       );
       const responseData = await response.json();
       // console.log(responseData);

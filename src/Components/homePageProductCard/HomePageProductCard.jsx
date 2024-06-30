@@ -15,7 +15,7 @@ const HomePageProductCard = () => {
   const getproducts = async () => {
     try {
       const response = await fetch(
-        "http://localhost:8000/api/product/get-products",
+        "https://e-commerce-backend-814s.onrender.com/api/product/get-products",
         {
           method: "GET",
         }

@@ -39,7 +39,7 @@ const BuyNowModal = () => {
     console.log("click");
 
     try {
-      const res = await fetch(`http://localhost:8000/api/payment/order`, {
+      const res = await fetch(`https://e-commerce-backend-814s.onrender.com/api/payment/order`, {
         method: "POST",
         headers: {
           "content-type": "application/json",
@@ -59,7 +59,7 @@ const BuyNowModal = () => {
   const handlePaymentVerify = async (data) => {
     const {
       data: { key },
-    } = await axios.get("http://localhost:8000/api/getkey");
+    } = await axios.get("https://e-commerce-backend-814s.onrender.com/api/getkey");
     console.log(data.amount);
     console.log(data.currency);
     console.log(data.id);
@@ -74,7 +74,7 @@ const BuyNowModal = () => {
       handler: async (response) => {
         // console.log("response", response)
         try {
-          const res = await fetch(`http://localhost:8000/api/payment/verify`, {
+          const res = await fetch(`https://e-commerce-backend-814s.onrender.com/api/payment/verify`, {
             method: "POST",
             headers: {
               "content-type": "application/json",

@@ -22,7 +22,7 @@ console.log(user.email)
     const getUserOrder = async () => {
         try {
    
-            const response = await fetch("http://localhost:8000/api/order/get-user-orders/" + user.email, {
+            const response = await fetch("https://e-commerce-backend-814s.onrender.com/api/order/get-user-orders/" + user.email, {
                 method: "GET",
             })
             const data = await response.json();

@@ -14,7 +14,7 @@ const CategoryPage = () => {
     const getproducts = async () => {
         setLoading(true)
         try {
-            const response = await fetch("http://localhost:8000/api/product/get-products", {
+            const response = await fetch("https://e-commerce-backend-814s.onrender.com/api/product/get-products", {
                 method: "GET",
             });
             const data = await response.json();

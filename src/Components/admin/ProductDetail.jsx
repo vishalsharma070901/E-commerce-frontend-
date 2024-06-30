@@ -13,7 +13,7 @@ const ProductDetail = () => {
 
   const getproducts = async () => {
     try {
-      const response = await fetch("http://localhost:8000/api/admin/products", {
+      const response = await fetch("https://e-commerce-backend-814s.onrender.com/api/admin/products", {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,
@@ -29,7 +29,7 @@ const ProductDetail = () => {
     try {
       setLoading(true);
       const response = await fetch(
-        `http://localhost:8000/api/admin/deleteProduct/${id}`,
+        `https://e-commerce-backend-814s.onrender.com/api/admin/deleteProduct/${id}`,
         {
           method: "DELETE",
           headers: {

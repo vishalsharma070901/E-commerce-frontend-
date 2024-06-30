@@ -8,7 +8,7 @@ const UserDetail = () => {
 
   const getUsers = async () => {
     try {
-      const response = await fetch("http://localhost:8000/api/admin/users", {
+      const response = await fetch("https://e-commerce-backend-814s.onrender.com/api/admin/users", {
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,

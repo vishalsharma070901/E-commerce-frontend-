@@ -18,7 +18,7 @@ const OrderDetail = () => {
   const getAllOrders = async () => {
     try {
       const response = await fetch(
-        "http://localhost:8000/api/order/get-all-orders",
+        "https://e-commerce-backend-814s.onrender.com/api/order/get-all-orders",
         {
           method: "GET",
         }
@@ -38,7 +38,7 @@ const OrderDetail = () => {
     try {
       const token = localStorage.getItem("token");
       const response = await fetch(
-        `http://localhost:8000/api/admin/order-status/${orderId}`,
+        `https://e-commerce-backend-814s.onrender.com/api/admin/order-status/${orderId}`,
         {
           method: "PUT",
           headers: {
@@ -63,7 +63,7 @@ const OrderDetail = () => {
     try {
       //  setLoading(true)
       const response = await fetch(
-        `http://localhost:8000/api/admin/deleteorder/` + id,
+        `https://e-commerce-backend-814s.onrender.com/api/admin/deleteorder/` + id,
         {
           method: "DELETE",
           headers: {
