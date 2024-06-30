@@ -23,7 +23,7 @@ console.log(user.email)
         try {
    
             const response = await fetch("https://e-commerce-backend-814s.onrender.com/api/order/get-user-orders/" + user.email, {
-                mode:"no-cors",
+              
                 method: "GET",
             })
             const data = await response.json();
