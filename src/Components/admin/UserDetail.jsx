@@ -9,7 +9,7 @@ const UserDetail = () => {
   const getUsers = async () => {
     try {
       const response = await fetch("https://e-commerce-backend-814s.onrender.com/api/admin/users", {
-        mode:"no-cors",
+        
         method: "GET",
         headers: {
           Authorization: `Bearer ${token}`,

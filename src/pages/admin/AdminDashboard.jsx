@@ -56,7 +56,7 @@ const AdminDashboard = () => {
     const getAllOrders= async ()=>{
         try {
             const response = await fetch("https://e-commerce-backend-814s.onrender.com/api/order/get-all-orders", {
-                mode:"no-cors",
+             
                 method: "GET",
                 // headers:{
                 //     Authorization: `Bearer ${token}`

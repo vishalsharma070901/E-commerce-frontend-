@@ -20,7 +20,7 @@ const OrderDetail = () => {
       const response = await fetch(
         "https://e-commerce-backend-814s.onrender.com/api/order/get-all-orders",
         {
-          mode:"no-cors",
+         
           method: "GET",
         }
       );

@@ -32,7 +32,7 @@ const Login = () => {
     console.log(user);
     try {
       const response = await fetch(`https://e-commerce-backend-814s.onrender.com/api/auth/login`, {
-        mode:"no-cors",
+     
         method: "POST",
         headers: {
           "Content-Type": "application/json",
