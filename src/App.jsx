@@ -20,7 +20,7 @@ import CategoryPage from './pages/category/CategoryPage';
 import myContext from './context/myContext'; 
 
 const App = () => {
- const[ loading, SetLoading]= useState()
+ const[ loading, SetLoading]= useState(true)
 
   useEffect(()=>{
    SetLoading(false)
