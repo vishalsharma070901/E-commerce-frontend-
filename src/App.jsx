@@ -18,6 +18,8 @@ import Category from './Components/category/Category';
 import { Logout } from './pages/logout/Logout';
 import CategoryPage from './pages/category/CategoryPage';
 import myContext from './context/myContext'; 
+import PulseLoader from "react-spinners/PulseLoader";
+
 
 const App = () => {
  const[ loading, SetLoading]= useState(true)
