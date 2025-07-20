@@ -19,3 +19,10 @@ This is the frontend for a full-featured MERN stack e-commerce application. It p
 git clone https://github.com/your-username/ecommerce-frontend.git
 cd ecommerce-frontend
 npm install
+
+---
+
+## Enviorment variables
+
+REACT_APP_API_URL=http://localhost:5000/api
+REACT_APP_RAZORPAY_KEY=your_razorpay_key
