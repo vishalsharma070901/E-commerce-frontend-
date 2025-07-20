@@ -1,8 +1,21 @@
-# React + Vite
+# 🛍️ E-Commerce Frontend (React + Tailwind CSS)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the frontend for a full-featured MERN stack e-commerce application. It provides users with an interactive interface to browse products, manage their cart, and place orders. Admins can manage inventory through a secure dashboard.
 
-Currently, two official plugins are available:
+--
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Frontend**: React.js, Tailwind CSS
+- **Routing**: React Router
+- **State Management**: React Hooks, Context API
+- **HTTP Requests**: Axios
+- **Payment Gateway**: Razorpay
+- **Deployment**: Firebase Hosting, GitHub Actions
+
+---
+
+## 📦 Installation
+
+```bash
+git clone https://github.com/your-username/ecommerce-frontend.git
+cd ecommerce-frontend
+npm install
